@@ -9,7 +9,7 @@ class Categorias(models.Model):
     descripcion = models.TextField(max_length=2000)
     tipoCategoria = models.CharField(max_length=10)
     image = models.ImageField(upload_to='profile_image', blank=True, null=True)
-    estado = models.IntegerField(max_length=1)
+    estado = models.CharField(max_length=1)
     def __str__(self):
         return self.nombreCategoria
 

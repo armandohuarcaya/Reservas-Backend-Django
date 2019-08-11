@@ -10,11 +10,11 @@ class NaturalPersons(models.Model):
     apeMater = models.CharField(max_length=30)
     edad = models.CharField(max_length=30)
     fecNacim = models.DateField()
-    dni = models.IntegerField(max_length=8)
+    dni = models.CharField(max_length=8)
     email = models.EmailField(max_length=50)
-    celular = models.IntegerField(max_length=9)
+    celular = models.CharField(max_length=9)
     image = models.ImageField(upload_to='profile_imagess', blank=True, null=True)
-    estado = models.IntegerField(max_length=1)
+    estado = models.CharField(max_length=1)
 
     def __str__(self):
         return self.nombre

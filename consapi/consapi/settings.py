@@ -48,9 +48,9 @@ INSTALLED_APPS = [
     'categorias',
     'catalogos',
     'naturalpersons',
-#    'locales',
+    'geolocalizations',
+    'reservas',
 #    'canchas',
-#    'reservas',
 ]
 
 MIDDLEWARE = [

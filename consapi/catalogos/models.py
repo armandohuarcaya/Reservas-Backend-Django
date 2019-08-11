@@ -6,7 +6,7 @@ class Catalogos(models.Model):
     nombre = models.CharField(max_length=30)
     descripcion = models.TextField(max_length=200)
     image = models.ImageField(upload_to='profile_images', blank=True, null=True)
-    estado = models.IntegerField(max_length=1)
+    estado = models.CharField(max_length=1)
 
     def __str__(self):
         return self.nombre
