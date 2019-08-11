@@ -4,4 +4,4 @@ from geolocalizations.models import Geolocalizations
 class GeolocalizationsSerializer(ModelSerializer):
     class Meta:
         model = Geolocalizations
-        fields = ('id', 'nombre', 'lat', 'lng', 'arrastrable', 'estado')
+        fields = ('id', 'nombre', 'lat', 'lng', 'arrastrable', 'image', 'estado')

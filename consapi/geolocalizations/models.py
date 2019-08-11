@@ -9,6 +9,7 @@ class Geolocalizations(models.Model):
     lat = models.CharField(max_length=100)
     lng = models.CharField(max_length=100)
     arrastrable = models.CharField(max_length=5)
+    image = models.ImageField(upload_to='profile_img', blank=True, null=True)
     estado = models.CharField(max_length=1)
     
 

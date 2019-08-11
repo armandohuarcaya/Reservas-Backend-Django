@@ -26,6 +26,7 @@ urlpatterns = [
     path('', include('catalogos.urls')),
     path('', include('naturalpersons.urls')),
     path('', include('geolocalizations.urls')),
+    path('', include('reservas.urls')),
  #   path('', include('locales.urls')),
  #   path('', include('canchas.urls')),
  #   path('', include('reservas.urls')),
