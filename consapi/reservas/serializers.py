@@ -4,4 +4,4 @@ from reservas.models import Reservas
 class ReservasSerializer(ModelSerializer):
     class Meta:
         model = Reservas
-        fields = ('id', 'hora_reserv', 'estado')
+        fields = ('id', 'hora_reserv', 'precio', 'estado')
