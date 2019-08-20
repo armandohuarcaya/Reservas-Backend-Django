@@ -44,12 +44,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'oauth2_provider',
     'corsheaders',
+    'django_filters',
     'categorias',
     'catalogos',
     'naturalpersons',
     'geolocalizations',
     'reservas',
+    'app_auth',
 #    'canchas',
 ]
 
@@ -137,3 +140,9 @@ CORS_ORIGIN_ALLOW_ALL = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT =os.path.join(BASE_DIR)
+
+REST_FRAMEWORK = { 
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+    ), 
+}
