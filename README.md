@@ -24,3 +24,4 @@ iniciando project sistema de eservas de canchas Django Rest
 * curl -X POST -d "grant_type=password&username=MYUSER&password=MYPASSWORD" http://CLIENT_ID:SECRET_TOKEN@localhost:8000/auth/o/token/
 
 * curl -H "Authorization: Bearer TOKEN" http://localhost:8000/auth/user/users/
+* Proba y Ved
